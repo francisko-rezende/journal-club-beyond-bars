@@ -1,3 +1,6 @@
+# Templates created to supplement the journal club discussion on alternatives to bar plots
+# by Francisko de Moraes Rezende, 2020-11-18, francisko.rezende@gmail.com
+
 library(tidyverse)
 library(janitor)
 library(ggbeeswarm)
@@ -30,8 +33,6 @@ ggplot(ind_data, aes(x = groups, y = value)) +
   geom_quasirandom(groupOnX = T) +
   stat_summary(geom = "crossbar",
                fun = "median")
-
-
 
 # non-independent data ----------------------------------------------------
 
